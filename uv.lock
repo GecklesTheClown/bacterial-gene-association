@@ -120,17 +120,6 @@ wheels = [
 ]
 
 [[package]]
-name = "bio-panzer"
-version = "0.1.0"
-source = { git = "https://github.com/GecklesTheClown/bio-panzer.git#bdb3b58910c4c02eb89871bd2ba9bdd515572ff8" }
-dependencies = [
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
-]
-
-[[package]]
 name = "bleach"
 version = "6.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -341,7 +330,6 @@ name = "gene-association"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "bio-panzer" },
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "mlxtend" },
@@ -352,7 +340,6 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bio-panzer", git = "https://github.com/GecklesTheClown/bio-panzer.git" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.3" },
     { name = "mlxtend", specifier = ">=0.23.4" },
