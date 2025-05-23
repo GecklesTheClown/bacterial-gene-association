@@ -17,7 +17,7 @@ def main():
     spmf = Spmf("FPGrowth_association_rules",
                 input_filename="transactions.txt",
                 output_filename="output.txt",
-                arguments=[60, 60, 2, 3],
+                arguments=[0.6, 0.6, 2, 3],
                 spmf_bin_location_dir="./")  # ← ✔ points to directory containing spmf.jar
 
     spmf.run()   
