@@ -14,10 +14,10 @@ def main():
     df = pd.read_csv('data/DRX100168.csv').drop('FILE', axis=1)
     convert(df)
         
-    spmf = Spmf("NegFIN",
+    spmf = Spmf("FPGrowth_association_rules",
                 input_filename="transactions.txt",
                 output_filename="output.txt",
-                arguments=[0.8],
+                arguments=[60, 60, 2, 3],
                 spmf_bin_location_dir="./")  # ← ✔ points to directory containing spmf.jar
 
     spmf.run()   
